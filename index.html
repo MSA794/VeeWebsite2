@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>VeeGold - الموقع الرسمي</title>
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <div class="container">
+    <header class="top">
+      <div class="brand"><img src="assets/images/logo.png" class="logo" alt="Vee"> <span>VeeGold</span></div>
+      <nav class="nav">
+        <button id="btnHome" class="link">الرئيسية</button>
+        <button id="btnFree" class="link">الأساسيات</button>
+        <button id="btnStore" class="link">المتجر</button>
+        <button id="btnAdmin" class="btn">لوحة الأدمن</button>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section id="home" class="card">
+        <h1>مرحبًا في VeeGold</h1>
+        <p class="muted">تعلم Termux من الصفر إلى الإحتراف — واجهة عربية داكنة ذهبيّة.</p>
+      </section>
+
+      <section id="free" class="card">
+        <h2>الأساسيات المجانية</h2>
+        <div id="freeList"></div>
+      </section>
+
+      <section id="store" class="card hidden">
+        <h2>المتجر المدفوع</h2>
+        <div id="paidList"></div>
+      </section>
+
+      <section id="account" class="card">
+        <h2>حسابك</h2>
+        <div id="userInfo">لم تقم بتسجيل الدخول</div>
+        <div style="margin-top:10px">
+          <button id="loginBtn" class="btn">تسجيل / دخول</button>
+          <button id="registerBtn" class="ghost">إنشاء حساب</button>
+          <button id="logoutBtn" class="ghost hidden">تسجيل الخروج</button>
+        </div>
+      </section>
+
+      <section id="adminPanel" class="card hidden">
+        <h2>لوحة الأدمن</h2>
+        <div class="muted small">المستخدم الافتراضي للأدمن: <strong>Vee</strong> / <strong>411</strong></div>
+        <div class="grid">
+          <div class="card small">
+            <h4>إحصائيات</h4>
+            <div id="statUsers">المستخدمون: 0</div>
+            <div id="statPurchases">المشتريات: 0</div>
+          </div>
+          <div class="card small">
+            <h4>إدارة المستخدمين</h4>
+            <div id="usersList"></div>
+          </div>
+          <div class="card small">
+            <h4>إضافة محتوى مدفوع</h4>
+            <input id="newTitle" placeholder="عنوان المحتوى">
+            <input id="newPrice" placeholder="السعر (نقطة)" type="number">
+            <textarea id="newPayload" placeholder="نص/أمر/رابط"></textarea>
+            <div style="margin-top:8px">
+              <button id="addPaid" class="btn">أضف</button>
+            </div>
+          </div>
+        </div>
+        <div style="margin-top:10px">
+          <button id="exportBtn" class="ghost">تصدير JSON</button>
+          <button id="importBtn" class="ghost">استيراد JSON</button>
+        </div>
+      </section>
+
+    </main>
+
+    <a class="wh" href="https://web.whatsapp.com/send?phone=+2490904131357" target="_blank">تواصل عبر واتساب</a>
+    <footer>© 2025 VeeGold</footer>
+  </div>
+
+  <div id="modal" class="modal hidden" aria-hidden="true">
+    <div class="modal-card">
+      <button id="closeModal" class="close">×</button>
+      <div id="modalContent"></div>
+    </div>
+  </div>
+
+<script src="assets/js/app.js"></script>
+</body>
+</html>

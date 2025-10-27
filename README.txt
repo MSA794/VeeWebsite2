@@ -1,0 +1,1 @@
+Vee Final - Ready to upload\nAdmin: Vee / 411\nPaid store only visible after login\nData stored in localStorage key veefinal_data_v1

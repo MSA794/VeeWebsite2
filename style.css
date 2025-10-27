@@ -1,0 +1,22 @@
+:root{--bg:#050508;--card:#0b0b0d;--gold:#ffd700;--muted:#cfcfcf}
+*{box-sizing:border-box;font-family:Tahoma,Arial,sans-serif}
+body{margin:0;background:radial-gradient(circle at 10% 10%, rgba(255,215,0,0.02), transparent), var(--bg);color:var(--muted)}
+.container{max-width:1000px;margin:16px auto;padding:12px}
+.top{display:flex;justify-content:space-between;align-items:center}
+.brand{display:flex;align-items:center;gap:10px;color:var(--gold);font-weight:800}
+.logo{width:48px;height:48px;border-radius:8px;border:2px solid rgba(255,215,0,0.04)}
+.nav .link{background:transparent;border:none;color:var(--muted);margin-left:8px;cursor:pointer}
+.btn{background:var(--gold);border:none;color:#000;padding:8px 12px;border-radius:8px;cursor:pointer;font-weight:700}
+.ghost{background:transparent;border:1px solid rgba(255,255,255,0.04);color:var(--muted);padding:8px 10px;border-radius:8px;cursor:pointer}
+.card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));padding:14px;border-radius:10px;margin-top:12px;border:1px solid rgba(255,215,0,0.03)}
+.small{font-size:13px;color:#bbb}
+.muted{color:#9d9d9d}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.hidden{display:none}
+.list-item{display:flex;justify-content:space-between;align-items:center;padding:8px;border-radius:8px;background:rgba(255,255,255,0.01);margin-bottom:8px}
+.wh{position:fixed;left:12px;bottom:18px;background:linear-gradient(90deg,#25D366,#128C7E);color:#fff;padding:12px 16px;border-radius:28px;text-decoration:none}
+footer{text-align:center;color:#777;margin-top:14px;padding:8px}
+.modal{position:fixed;inset:0;display:flex;align-items:center;justify-content:center;background:rgba(0,0,0,0.6);z-index:9999}
+.modal-card{background:linear-gradient(180deg,#070707,#0b0b0d);padding:16px;border-radius:10px;width:90%;max-width:600px;border:1px solid rgba(255,215,0,0.04)}
+.close{background:transparent;border:none;color:var(--muted);font-size:22px;cursor:pointer;float:left}
+@media(max-width:800px){.grid{grid-template-columns:1fr} .brand span{display:none}}
